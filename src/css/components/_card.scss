@@ -1,0 +1,17 @@
+@use "../base/mixins";
+
+.card {
+  background-color: white;
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px #000;
+
+  &_dark {
+    background-color: black;
+
+    @include mixins.up('2xl') {
+      background-color: theme('colors.gray.900');
+    }
+  }
+}

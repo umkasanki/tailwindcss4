@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "vars";
+
+@use 'sass:math';
+
+@mixin down($breakpoint) {
+  @media (max-width: calc(map.get(vars.$breakpoints, $breakpoint) - 1px)) {
+    @content;
+  }
+}
+
+@mixin up($breakpoint) {
+  @media (min-width: map.get(vars.$breakpoints, $breakpoint)) {
+    @content;
+  }
+}
