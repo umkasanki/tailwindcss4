@@ -67,6 +67,7 @@ $text-sizes: (
   @each $name, $value in $text-sizes {
     --text-#{$name}: #{rem-convert($value)};
   }
+  // text sizes end
 }
 
 @layer components {
