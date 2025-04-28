@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.1.4",
     "postcss": "^8.5.3",
     "postcss-nesting": "^13.0.1",
+    "postcss-rem": "^3.0.0",
     "postcss-scss": "^4.0.9",
     "tailwindcss": "^4.1.4"
   }
